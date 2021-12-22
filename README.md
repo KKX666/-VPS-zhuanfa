@@ -1,6 +1,6 @@
 # 搭建VPS国内转发
 -------------------
-怎样搭建vps国内转发
+搭建VPS国内转发 实现高速科学上网
 ---------------------
 本文脚本来自于https://github.com/arloor/iptablesUtils
 
@@ -18,14 +18,20 @@
 
 第四步：安装转发脚本
 
-`wget --no-check-certificate -qO natcfg.sh https://raw.githubusercontent.com/arloor/iptablesUtils/master/natcfg.sh && bash natcfg.sh`
+```
+wget --no-check-certificate -qO natcfg.sh https://raw.githubusercontent.com/arloor/iptablesUtils/master/natcfg.sh && bash natcfg.sh
+```
 
 如果不能安装自己谷歌自己找自己vps系统怎么装wget的方法
 也可以试试以下两条
 
-`yum install wget`
+```
+yum install wget
+```
 
-`wget --no-check-certificate -qO natcfg.sh http://www.arloor.com/sh/iptablesUtils/natcfg.sh && bash natcfg.sh`
+```
+wget --no-check-certificate -qO natcfg.sh http://www.arloor.com/sh/iptablesUtils/natcfg.sh && bash natcfg.sh
+```
 
 第五步：安装好后选择`1`添加转发端口
 
@@ -47,6 +53,8 @@
 
 想进入面板管理转发的话输入`bash natcfg.sh`
 
-小提醒不要用192.168.xx.xx内网ip连接ssh哦 那是连接不上的
+温馨提示
+---------------------
+不要用192.168.xx.xx内网ip连接ssh哦 那是连接不上的
 
-至此整个转发就OK啦
+至此教程结束
